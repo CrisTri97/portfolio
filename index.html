@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Mr.Tri | Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3cbea94712.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--Section Header start-->
+    <section id="header">
+        <div class="container">
+            <nav>
+                <img src="/assets/images/logo.png" alt="" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="nav-icon fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="nav-icon fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello,</p>
+                <h1>I'm <span id="multiText"></span> <br> from Viet Nam</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Section header end -->
+
+    <!-- Section About start -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assets/images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        My name is Ta Minh Tri, born in 1997, I come from Tay Ninh Vietnam. I have graduated from
+                        college of information technology majoring in software engineering and have had 1 year of
+                        self-study in website programming.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <!-- tab skills start-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="content-list">
+                            <li class="content-item"><span>Web Development</span> <br> Web app Development</li>
+                            <li class="content-item"><span>Technologies</span> <br>
+                                <ul class="content-tnlg">
+                                    <li>HTML</li>
+                                    <li>CSS/SCSS</li>
+                                    <li>JAVASCRIPT</li>
+                                    <li>REACTJS</li>
+                                    <li>DATABASE: SQL, MYSQL, MONGODB, ORACLE</li>
+                                    <li>Responsive</li>
+                                    <li>SOME LIBRARIES UI: Tailwindcss, Bootstrap, ReactStrap, Mui</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- tab skills end-->
+                    <!-- tab experience start-->
+                    <div class="tab-contents" id="experience">
+                        <ul class="content-list">
+                            <li class="content-item">I have 1 year of self-study in Website programming and have some
+                                projects in the process of self-study</li>
+                        </ul>
+                    </div>
+                    <!-- tab experience end-->
+                    <!-- tab Education start-->
+                    <div class="tab-contents" id="education">
+                        <ul class="content-list">
+                            <li class="content-item"><span>2015-2019: </span> <br> Information Technology College of Ho
+                                Chi Minh City - itc from Viet Nam</li>
+                            <li class="content-item"><span>2019-2021: </span> <br> Join Military Service</li>
+                            <li class="content-item"><span>2021-until now: </span> <br> Review and self-study Web
+                                programming</li>
+                        </ul>
+                    </div>
+                    <!-- tab Education end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section About end -->
+
+    <!-- Section services start-->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Create custom web interface designs . Develop skills and expertise in relevant programming
+                        languages or software such as HTML , CSS and Javascript . Create user-friendly, efficient and
+                        beautiful products</p>
+
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Technology used</h2>
+                    <p>Apply javascript's React library to projects that combine UI
+                        libraries (Bootstrap, ReactStrap, tailwindcss, Mui, ...) to build eye-catching user-friendly
+                        interfaces. Apply database management systems such as SQL, MySql, Mongodb, Oracle, ... to
+                        manage data of the website</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Section services end-->
+    <!-- Section Portfolio start -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+
+            <div class=" work-list">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pj-1.png" alt="">
+                            <div class="layer">
+                                <h3>Landing page Restaurant_Food</h3>
+                                <p><span class="project-use">Used Technologies:</span> HTML, CSS, JAVASCRIPT, Swiperjs,
+                                    lightgalleryjs, fontawesome </p>
+                                <a href="https://cristri97.github.io/RestaurantFood-v1/" target="_blank"><i
+                                        class="fa-regular fa-eye"></i></a>
+                                <a href="https://github.com/CrisTri97/RestaurantFood-v1" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pj-2.jpg" alt="">
+                            <div class="layer">
+                                <h3>Wep App Media_music</h3>
+                                <p><span class="project-use">Used Technologies:</span> HTML, CSS, JAVASCRIPT </p>
+                                <a href="https://cristri97.github.io/music-player-v1/" target="_blank"><i
+                                        class="fa-regular fa-eye"></i></a>
+                                <a href="https://github.com/CrisTri97/music-player-v1" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pj-3.jpg" alt="">
+                            <div class="layer">
+                                <h3>Landing page Travel</h3>
+                                <p><span class="project-use">Used Technologies:</span> HTML, CSS, JAVASCRIPT, Swiperjs,
+                                    fontawesome </p>
+
+                                <a href="https://cristri97.github.io/My-web_Travel/" target="_blank"><i
+                                        class="fa-regular fa-eye"></i></a>
+                                <a href="https://github.com/CrisTri97/My-web_Travel/" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pj-4.jpg" alt="">
+                            <div class="layer">
+                                <h3>Form Validate</h3>
+                                <p><span class="project-use">Used Technologies:</span> HTML, CSS, JAVASCRIPT </p>
+                                <a href="https://cristri97.github.io/form-validate-js-v1/" target="_blank"><i
+                                        class="fa-regular fa-eye"></i></a>
+                                <a href="https://github.com/CrisTri97/form-validate-js-v1" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pjreact-1.png" alt="">
+                            <div class="layer">
+                                <h3>Web App Chat_Room</h3>
+
+                                <p><span class="project-use">Used Technologies:</span> Reactjs, React Hooks, ContextApi,
+                                    Ant Design,styled-component, firebase </p>
+                                <a href="https://github.com/CrisTri97/chat-app-firebase-v1" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pjreact-2.png" alt="">
+                            <div class="layer">
+                                <h3>Web app BookingCare</h3>
+                                <p><span class="project-use">Client side used:</span> HTML, CSS, JAVASCRIPT, Reactjs,
+                                    React Redux, React Persist,
+                                    ReactStrap,
+                                    Bootstrap, scss,... </p>
+                                <p><span class="project-use">Server side used:</span> Nodejs, Express, Sequelize, MySql
+                                </p>
+                                <a href="https://tridev-frontend-reactjs.herokuapp.com/home" target="_blank"><i
+                                        class="fa-regular fa-eye"></i></a>
+                                <a href="https://github.com/CrisTri97/booking-clone-v1" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pjreact-3.png" alt="">
+                            <div class="layer">
+                                <h3>Web app Spotify Music</h3>
+                                <p><span class="project-use">Used Technologies:</span> HTML, CSS, JAVASCRIPT, Reactjs,
+                                    Tailwindcss </p>
+                                <a href="https://spotify-music-v1.netlify.app/" target="_blank"><i
+                                        class="fa-regular fa-eye"></i></a>
+                                <a href="https://github.com/CrisTri97/spotify-v1" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide work">
+                            <img src="/assets/images/pjreact-4.png" alt="">
+                            <div class="layer">
+                                <h3>Web Blog</h3>
+                                <p><span class="project-use">Client side used:</span> HTML, CSS, JAVASCRIPT, Reactjs,
+                                    React Redux, React Router Dom,
+                                    fontawesome, scss,...</p>
+                                <p><span class="project-use">Server side used:</span> Nodejs, Express, Mongoose, Mongodb
+                                </p>
+                                <a href="https://github.com/CrisTri97/blog-web-app-v1" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Portfolio end -->
+    <!-- Section contact start -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> tritmdev@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> 0706805579</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100062662086454"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/CrisTri97"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/assets/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section contact end -->
+    <!-- Section footer start -->
+    <footer class="copyright">
+        <p>Copyright &copy; tritmdev@gmail.com. Make <i class="fa-regular fa-heart"></i> by Tr.dev</p>
+    </footer>
+    <!-- Section footer end -->
+
+    <!-- Script index.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.50": {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed("#multiText", {
+            strings: ["M.Tri", "Web designer", "web developer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+    </script>
+    <script src="index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw3vqdpOBXBDCcFbYYfQI5kyKY3sv2NmCRgrx3HhqRZrngkdWhb47NmeHFIiOVkZRgZkA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully!"
+                    setTimeout(() => {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
